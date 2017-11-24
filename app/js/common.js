@@ -1,5 +1,9 @@
 $(function() {
 
+    if (window.location.href.indexOf("test") > -1) {
+       $('.utm').show().val(window.location.href);
+    };
+
     $('.par_ax').click(function () {
        $(this).slideToggle(500);
     });

@@ -39,7 +39,7 @@ $(function() {
         return false;
     });
     
-    $('.quest__yellow-bg').click(function () {
+    $('.quest__yellow-bg, .js_scroll_black').click(function () {
         $('.quest').animate({
             scrollTop: $(".js-quest").offset().top
         }, 500);

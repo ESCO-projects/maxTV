@@ -55,7 +55,7 @@ $(function() {
     firstTimer = setTimeout(function(){
         $('.quest').addClass('quest__scaler').css('bottom','0');
         $('body').addClass('body_stop');
-    }, 50000);
+    }, 10000);
 
     $('.quest__closer').click(function () {
         $('.quest').removeClass('quest__scaler');
@@ -64,7 +64,7 @@ $(function() {
         closerClearTimer = setTimeout(function(){
             $('body').addClass('body_stop');
             $('.quest').addClass('quest__scaler');
-        }, 180000);
+        }, 40000);
     });
     $('.js_mod_slider').slick({
         dots: true,
@@ -105,7 +105,7 @@ $(function() {
                timerClear = setTimeout(function () {
                     $('.quest').css('bottom','0').addClass('quest__scaler');
                     $('body').addClass('body_stop');
-                },50000);
+                },60000);
             }
         }
     });

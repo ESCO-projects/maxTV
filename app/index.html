@@ -52,7 +52,7 @@
 
 
   <!--STYLES MAIN START-->
-  <link rel="stylesheet" href="css/main.min.css?ver=2.05">
+  <link rel="stylesheet" href="css/main.min.css?ver=2.777">
   <!--STYLES MAIN END-->
 
   <!--START GOOGLE OPTIMIZE-->
@@ -295,9 +295,9 @@
           <div class="col-md-3 clearfix">
             <div class="muscle second fl_l mr_l">
               <div class="muscle__circle blue">
-                <img class="arr_ico" src="img/icons/benefit_04.png" alt="muscle">
-                <p>Теперь не будет проблем «не успел посмотреть» или «не знаю что выбрать». Архив Ваших любимых программ, сериалов и фильмов за 10 дней.</p>
-              </div><span class="muscle__sub">Архив каналов и <br>огромная видеотека</span>
+                <img class="arr_ico" src="img/svg_elem/Vod.svg" alt="VOD">
+                <p>Бесплатная система индивидуальной доставки абоненту телевизионных программ и фильмов по цифровой сети.</p>
+              </div><span class="muscle__sub">Бесплатный <br>VOD</span>
             </div>
           </div>
         </div>
@@ -762,6 +762,7 @@
           <div class="footer__button"><a class="popup_modal js_value" data-form="Контакты" href="#modal" onClick="ga('send', 'event', 'Knopka6', 'PozvonitNam');">Позвонить нам</a>
           </div>
           <div class="footer__copyrate">&#169; Русское IP телевидение MAX TV Израиль</div>
+          <a class="footer__copyrate footer__privacy" target="_blank" href="PrivacyPolicyMaxTv.pdf">политика конфиденциальности</a>
         </div>
       </div>
     </footer>
@@ -778,6 +779,7 @@
           <form id="js_form_default" class="js_send_form">
             <input type="hidden" name="DATA[TITLE]" value="Лендинг MAX TV">
             <input type="hidden" name="DATA[SOURCE_ID]" value="WEB">
+            <input class="utm" type="hidden" name="DATA[ADDRESS]">
             <input class="form_id" type="hidden" name="DATA[SOURCE_DESCRIPTION]">
             <label>
               <span class="name_def">Ваше имя</span>
@@ -982,7 +984,7 @@
   <div class="modal__closer close_tech js_close_modal"></div>
 </div>
     <!--Modal unique timeline-->
-<div class="quest clearfix">
+  <!--   <div class="quest clearfix">
       <div class="quest__wrap">
         <div class="quest__title clearfix">
           <div class="quest__title-cont">
@@ -1038,8 +1040,75 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   <!--Modal bank-->
+
+  <!-- start black -->
+  <div class="quest clearfix">
+      <div class="quest__wrap">
+        <div class="quest__title clearfix">
+          <div class="quest__title-cont">
+            <h5>Black <span>Friday</span></h5>
+            <div class="quest__closer">
+              <div class="quest__closer-lines"></div>
+            </div>
+          </div>
+        </div>
+        <div class="quest__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <img class="black_image" src="img/black.png" alt="">
+                <div class="quest__text js_scroll_black">
+                  <p>
+                    Бетонная стена цен, которая стояла <br>
+                    весь год – разрушена. <br>
+                    На сайте цены снижены уже сейчас.  <br>
+                    1 приставка - 99 шекелей в месяц <br>
+                    2 приставки - 169 шекелей в месяц <br>
+                    3 приставки - 200 шекелей в месяц
+                  </p>
+                  <p>
+                    Успей на скидки до 24,11,2017, в 14:00 
+                    все закончится!
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="black_add_title js_scroll_black">
+                  Завели будильник и ждете<br>
+                  <span>«Черную Пятницу»?</span><br>
+                  Зачем ее ждать,<br> если в <span>MAX TV</span>
+                  она уже началась! 
+                </div>
+                <div class="quest__form">
+                  <form class="js_send_form">
+                    <input type="hidden" name="DATA[TITLE]" value="Лендинг MAX TV">
+                    <input type="hidden" name="DATA[SOURCE_ID]" value="WEB">
+                    <input type="hidden" name="DATA[SOURCE_DESCRIPTION]" value="Всплывающее окно TimeLine BLACK FRIDAY">
+                    <div class="quest__inp">
+                      <span class="name_def">Ваше имя</span>
+                      <input class="quest__name js-quest" title="Введите ваше имя" type="text" name="DATA[NAME]" placeholder="Ваше имя" required autocomplete="off">
+                    </div>
+                    <div class="quest__inp">
+                      <span class="name_def">Телефон</span>
+                      <input class="quest__phone js_mask" title="Введите ваш телефон" type="tel" name="DATA[PHONE_WORK]" placeholder="Телефон" required autocomplete="off">
+                    </div>
+                    <div class="quest__inp">
+                      <span class="name_def">Ваш комментарий</span>
+                      <textarea title="Ваш комметарий" name="DATA[COMMENTS]" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <button class="quest__btn" onClick="ga('send', 'event', 'KnopkaNaForme4', 'OtpravitZayvku4');">Отправить заявку</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- end black -->
 <div id="mod_pay" class="mod zoom-anim-dialog mfp-hide">
   <form id="this_form">
     <input type="hidden" name="project_name" value="MAX TV">
@@ -1181,7 +1250,7 @@
 
 </div><!--end wrapper-->
 
-<script defer src="js/scripts.min.js?ver=2.05"></script>
+<script src="js/scripts.min.js?ver=3.007"></script>
 <script>
     var d = new Date();
     var n = d.getDay();
@@ -1192,8 +1261,8 @@
 </script>
 
 <!--GOOGLE MAPS START-->
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFzsMOtDiHiOU4ESWGclNA3KPYrCTccvk&callback=initMap"></script>
 <script>function initMap(){var e={lat:32.8076469,lng:35.1044953},l=new google.maps.Map(document.getElementById("map"),{zoom:16,center:new google.maps.LatLng(32.8076469,35.1101),disableDefaultUI:!0,scrollwheel:!1,styles:[{featureType:"administrative",elementType:"labels.text.fill",stylers:[{color:"#444444"}]},{featureType:"landscape",elementType:"all",stylers:[{color:"#fff"}]},{featureType:"poi",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"all",stylers:[{saturation:-100},{lightness:45}]},{featureType:"road.highway",elementType:"all",stylers:[{visibility:"simplified"}]},{featureType:"road.arterial",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"transit",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"water",elementType:"all",stylers:[{color:"#46bcec"},{visibility:"on"}]}]});new google.maps.Marker({position:e,map:l,title:"MAX TV",icon:"img/icons/marker.png"})}</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDf9JER8p84Uom0Ol4_Es1UnvOW0Zoaq8&callback=initMap"></script>
 <!--GOOGLE MAPS END-->
 <!--START remarketing Google -->
 <script type="text/javascript">

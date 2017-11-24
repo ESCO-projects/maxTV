@@ -421,17 +421,25 @@
     .quest
       overflow-y: scroll
       padding-bottom: 30px
-    .quest__title
-      h5
-        font-size: 22px
-    .quest__closer
-      top: -65px
-    .quest__text
+    .black_image
+      position: absolute
+      left: 10px
+      top: 10%
+    //.quest__title
+    //  h5
+    //    font-size: 22px
+    //.quest__closer
+    //  top: -65px
+    .quest__text,.black_add_title
+      position: relative
+      z-index: 9
+      background-color: rgba(0,0,0,0.5)
       margin: 0 auto
-      max-width: 100%
+      max-width: 320px
       float: none
-      br
-        display: none
+      border-radius: 6px
+      //br
+      //  display: none
       p
         text-align: center
     .quest__yellow-bg
@@ -545,6 +553,11 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 600px)
   .md_wrap
+    .quest__title
+      &::after
+        display: none
+      h5
+        font-size: 50px
     .fix__phone
       display: none
     //**********************
@@ -748,6 +761,15 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .md_wrap
+    .black_image
+      top: -20%
+      left: 0
+    .quest__title
+      h5
+        font-size: 40px
+    .quest__closer
+      top: -15px
+      right: -15px
     .tech
       display: none!important
     .head__form
@@ -934,6 +956,8 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)
   .md_wrap
+    .quest
+      padding: 5px
     .head__title
       h1
         a
@@ -978,7 +1002,7 @@
     //**********************
     .quest__title
       h5
-        font-size: 19px
+        font-size: 36px
     .quest__title-cont
       padding: 15px 15px 20px
     //***************************
