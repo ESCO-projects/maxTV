@@ -52,7 +52,7 @@
 
 
   <!--STYLES MAIN START-->
-  <link rel="stylesheet" href="css/main.min.css?ver=2.777">
+  <link rel="stylesheet" href="css/main.min.css?ver=4.877">
   <!--STYLES MAIN END-->
 
   <!--START GOOGLE OPTIMIZE-->
@@ -105,7 +105,7 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/45622929" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!--YANDEX METRICA END-->
-
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -984,10 +984,10 @@
   <div class="modal__closer close_tech js_close_modal"></div>
 </div>
     <!--Modal unique timeline-->
-  <!--   <div class="quest clearfix">
-      <div class="quest__wrap">
-        <div class="quest__title clearfix">
-          <div class="quest__title-cont">
+  <div class="quest clearfix">
+    <div class="quest__wrap">
+      <div class="quest__title clearfix">
+        <div class="quest__title-cont">
             <h5>Мы помогли вам найти то, что Вы <span class="quest__yellow-col">искали</span>?</h5>
             <p>
               Мы на 100% уверенны в качестве нашего продукта и <br>
@@ -998,7 +998,7 @@
             </div>
           </div>
         </div>
-        <div class="quest__content">
+      <div class="quest__content">
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
@@ -1039,12 +1039,12 @@
             </div>
           </div>
         </div>
-      </div>
-    </div> -->
+    </div>
+  </div>
   <!--Modal bank-->
 
   <!-- start black -->
-  <div class="quest clearfix">
+  <!-- <div class="quest clearfix">
       <div class="quest__wrap">
         <div class="quest__title clearfix">
           <div class="quest__title-cont">
@@ -1107,7 +1107,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   <!-- end black -->
 <div id="mod_pay" class="mod zoom-anim-dialog mfp-hide">
   <form id="this_form">
@@ -1250,15 +1250,8 @@
 
 </div><!--end wrapper-->
 
-<script src="js/scripts.min.js?ver=3.007"></script>
-<script>
-    var d = new Date();
-    var n = d.getDay();
-    if ( n <= 3) {
-        document.getElementById('time').style.display = 'none';
-        document.getElementById('cont').style.color = '#fff';
-    };
-</script>
+<script defer src="js/scripts.min.js"></script>
+
 
 <!--GOOGLE MAPS START-->
 <script>function initMap(){var e={lat:32.8076469,lng:35.1044953},l=new google.maps.Map(document.getElementById("map"),{zoom:16,center:new google.maps.LatLng(32.8076469,35.1101),disableDefaultUI:!0,scrollwheel:!1,styles:[{featureType:"administrative",elementType:"labels.text.fill",stylers:[{color:"#444444"}]},{featureType:"landscape",elementType:"all",stylers:[{color:"#fff"}]},{featureType:"poi",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"all",stylers:[{saturation:-100},{lightness:45}]},{featureType:"road.highway",elementType:"all",stylers:[{visibility:"simplified"}]},{featureType:"road.arterial",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"transit",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"water",elementType:"all",stylers:[{color:"#46bcec"},{visibility:"on"}]}]});new google.maps.Marker({position:e,map:l,title:"MAX TV",icon:"img/icons/marker.png"})}</script>
@@ -1275,5 +1268,6 @@
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
 <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/842804071/?guid=ON&amp;script=0"/></div></noscript>
 <!--END remarketing Google -->
+
 </body>
 </html>

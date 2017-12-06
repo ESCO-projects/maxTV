@@ -55,7 +55,7 @@ $(function() {
     firstTimer = setTimeout(function(){
         $('.quest').addClass('quest__scaler').css('bottom','0');
         $('body').addClass('body_stop');
-    }, 10000);
+    }, 30000);
 
     $('.quest__closer').click(function () {
         $('.quest').removeClass('quest__scaler');

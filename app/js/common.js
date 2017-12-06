@@ -1,8 +1,29 @@
 $(function() {
 
-    if (window.location.href.indexOf("test") > -1) {
-       $('.utm').show().val(window.location.href);
+    function hideTimer() {
+        $('.time').slideUp();
+        $('.footer__contacts h5').addClass('colorwhite');
     };
+
+    function dayAction() {
+        var d = new Date();
+        var n = d.getDay();
+        var Nday = n;
+        if ( Nday <= 3 ) {
+            hideTimer();
+        };
+    };
+    dayAction();
+
+    setInterval(function(){
+        dayAction();
+    },10000);
+
+
+
+    // if (window.location.href.indexOf("test") > -1) {
+    //    $('.utm').show().val(window.location.href);
+    // };
 
     $('.par_ax').click(function () {
        $(this).slideToggle(500);
